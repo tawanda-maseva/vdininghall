@@ -1,0 +1,15 @@
+<!-- Need to make a template for interface when logged in-->
+<p>
+	<a href="{% url 'vdh_app:home_page' %}">Log out and return to home</a>
+</p>
+<p></p>
+
+<ul> 		<!-- unordered list -->
+	{% for customer in customers %}
+	<li> 
+		{{customer}}
+	</li> 	<!--li = item in unordered list -->
+	{% empty %}
+		<li>No Pizzas available yet.</li>
+	{% endfor %}
+</ul>

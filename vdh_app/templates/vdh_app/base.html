@@ -1,0 +1,12 @@
+<!--Parent template for most pages-->
+<p>
+	<a href="{% url 'vdh_app:home_page' %}">vDiningHall Logo to home</a> <!-- logo hyperlinked to home -->
+	<!-- Navigation tab below -->
+</p>
+
+<p></p>
+
+<p>
+	<a href="{% url 'vdh_app:all_customers' %}">Admin Login</a>
+</p>
+{% block content %}{% endblock content %} <!-- placeholders that will be defined by child template -->
